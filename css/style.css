@@ -1,0 +1,590 @@
+
+/* font google */
+/* font-family: 'Montserrat', sans-serif; */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+
+/* font-family: 'Open Sans', sans-serif; */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+
+
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color: red;
+    --main-transition: all .5s;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+
+}
+
+
+
+/* start dark all */
+.dark {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+}
+
+.dark > .container {
+    min-height: 100vh;
+    position: relative;
+}
+
+/*
+.none {
+    display: none;
+}
+*/
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* bast background-color 
+background-color: #15212d;
+
+
+
+*/
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start dark 1 */
+
+.dark-1 {
+    background: #fff;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.dark-1.active {
+    background: #000;
+    color: #fff;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.dark-1 .nav {
+    min-height: 80px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.dark-1 .nav h1 {
+    line-height: 80px;
+    padding: 0 50px;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    flex-wrap: wrap;
+}
+
+.dark-1 .nav .button {
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    height: 40px;
+    width: 130px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* .dark-1 .nav .button::before {
+    position: absolute;
+    content: "Disabled";
+    right: 8px;
+    color: black;
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+
+.dark-1 .nav .button:valid::before {
+    content: "Enabled";
+    color: black;
+    text-transform: capitalize;
+} */
+
+.dark-1 .nav .button span {
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: capitalize;
+    pointer-events: none;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.dark-1 .nav .button span::before {
+    position: absolute;
+    content: "Disabled";
+    right: 0;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.dark-1 .nav .button span.active::before {
+    content: "Enabled";
+}
+
+.dark-1 .nav .button .center {
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    height: 24px;
+    width: 48px;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.dark-1 .nav .button .center input {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #e6e6e6;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    transition: var(--main-transition);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.dark-1 .nav .button .center input::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background: linear-gradient(#fff, #f2f2f2, #e6e6e6, #d9d9d9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: var(--main-transition);
+    transform: scale(.85);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transform: scale(.85);
+    -moz-transform: scale(.85);
+    -ms-transform: scale(.85);
+    -o-transform: scale(.85);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.dark-1 .nav .button .center input:checked {
+    background: #00d2e6;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.dark-1 .nav .button .center input:checked::before {
+    left: 24px;
+}
+
+.dark-1 h2 {
+    font-size: 40px;
+    padding: 10px 50px;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dark-1 p {
+    padding: 0 50px 20px 50px;
+    font-size: 19px;
+
+}
+
+
+
+/* end dark 1 */
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start dark 2 */
+
+.dark-2 {
+    --primary-color: #fff;
+    --secondary-color: #000;
+    background: var(--primary-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.dark-2.darks {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.dark-2 .nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.dark-2 .nav .logo {
+    color: var(--secondary-color);
+    font-size: 35px;
+    padding-left: 20px;
+    float: left;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.dark-2 .nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+.dark-2 .nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.dark-2 .nav ul li a {
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+
+.dark-2 .nav button {
+    cursor: pointer;
+    background: #a1a2a4;
+    height: 30px;
+    width: 60px;
+    border: 0;
+    outline: 0;
+    transition: var(--main-transition);
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.dark-2 .nav button.active {
+    background: #fff;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.dark-2 .nav button span {
+    background: #222121;
+    display: block;
+    height: 26px;
+    width: 26px;
+    margin-left: 3px;
+    transition: var(--main-transition);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.dark-2 .nav button.active span {
+    background: var(--primary-color);
+    margin-left: 31px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.dark-2 .title {
+    text-transform: uppercase;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.dark-2 .title h1 {
+    color: var(--secondary-color);
+    font-size: 55px;
+    cursor: pointer;
+}
+
+.dark-2 .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.dark-2 .button .btn {
+    text-transform: uppercase;
+    border: 1px solid var(--secondary-color);
+    padding: 5px 20px;
+    color: var(--secondary-color);
+    font-size: 18px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.dark-2 .button .btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+
+
+
+
+/* end dark 2 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start dark 3 */
+
+
+
+/* end dark 3 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start dark 4 */
+
+
+
+/* end dark 4 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start dark 5 */
+
+
+
+/* end dark 5 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start dark 6 */
+
+
+
+/* end dark 6 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start dark 7 */
+
+
+
+/* end dark 7 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start dark 8 */
+
+
+
+/* end dark 8 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start dark 9 */
+
+
+
+/* end dark 9 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start dark 10 */
+
+
+
+/* end dark 10 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start dark 11 */
+
+
+
+/* end dark 11 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
